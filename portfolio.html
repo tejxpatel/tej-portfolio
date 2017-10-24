@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton|Lobster" rel="stylesheet">
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+<title>Portfolio - Tej Patel</title>
+</head>
+
+<body class="portfolio">
+
+
+
+<nav>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a class="nav-active" href="portfolio.html">Portfolio</a></li>
+  <li><a href="about.html">About Me</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<main>
+
+
+
+<div class="page-header">
+<h1>My Work</h1>
+	</div>
+
+
+
+<div class="photo-portfolio">
+	<h2> Photo.</h2>
+<div class="parallax-photo">
+	<div id="scroll">
+	<ul>
+<li><a href="#"><img src="Assets/photo-gallery/image-1.jpg"></a></li>
+<li><a href="#"><img src="Assets/photo-gallery/image-2.jpg"></a></li>
+<li><a href="#"><img src="Assets/photo-gallery/image-3.jpg"></a></li>
+<li><a href="#"><img src="Assets/photo-gallery/image-4.jpg"></a></li>
+<li><a href="#"><img src="Assets/photo-gallery/image-5.jpg"></a></li>
+</ul>
+	</div>
+
+</div>
+
+</div>
+
+<div class="parallax"></div>
+
+<h2 class="video-section">Video.</h2>
+
+<div class="video-gallery">
+  <img class="mySlides" src="Assets/photo-gallery/image-4.jpg" style="width:100%">
+  <img class="mySlides" src="Assets/photo-gallery/image-5.jpg" style="width:100%">
+  <img class="mySlides" src="Assets/photo-gallery/image-3.jpg" style="width:100%">
+  <img class="mySlides" src="Assets/photo-gallery/image-2.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h2> Design.</h2>
+
+
+
+
+</main>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+</body>
+</html>
